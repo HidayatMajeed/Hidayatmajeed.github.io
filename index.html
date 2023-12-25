@@ -38,6 +38,46 @@
             <p>Description of Project 2.</p>
         </div>
     </section>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .animated-element {
+            width: 50px;
+            height: 50px;
+            background-color: #3498db;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(0, -50%);
+            animation: moveRight 2s linear infinite;
+        }
+
+        @keyframes moveRight {
+            0% {
+                left: 0;
+            }
+            100% {
+                left: calc(100% - 50px);
+            }
+        }
+    </style>
+    <title>Simple Animation</title>
+</head>
+<body>
+
+    <div class="animated-element"></div>
+
+</body>
+</html>
+
 
     <section id="contact">
         <h2>Contact</h2>
